@@ -1,4 +1,4 @@
-package com.example.activity1;
+package com.example.activity1.model;
 
 public class User {
     public String fullName,age,email;

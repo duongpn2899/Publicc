@@ -14,6 +14,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.activity1.view.Home;
+import com.example.activity1.view.Register;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -41,7 +43,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Login.this,Register.class);
+                Intent intent=new Intent(Login.this, Register.class);
                 startActivity(intent);
             }
         });
@@ -93,7 +95,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()) {
-                    startActivity(new Intent(Login.this,Home.class));
+                    startActivity(new Intent(Login.this, Home.class));
                 }else {
                     Toast.makeText(Login.this,"Failed to login! Please check your credentials!",Toast.LENGTH_LONG).show();
                 }

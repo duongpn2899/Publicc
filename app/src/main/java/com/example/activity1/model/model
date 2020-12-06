@@ -1,0 +1,7 @@
+các lớp cung cấp dữ liệu, dịch vụ liên quan đến dữ liệu.
+Lớp gamethu: mã game thủ *, tên game thủ, email, password, trạng thái
+
+Lớp trận đấu : mã trận (*), tên trận
+Lớp chi tiết trận đấu : mã chi tiết (*), mã game thủ, mã trận , điểm số
+
+Lớp data trận đấu : Hàng và cột - Lưu tạm ma trận dữ liệu trận đấu để check ma trận tính thắng thua.

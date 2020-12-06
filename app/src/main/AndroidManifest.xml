@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Activity1">
-        <activity android:name=".CreateRoom"></activity>
-        <activity android:name=".Register" />
-        <activity android:name=".Waiting" />
-        <activity android:name=".Home" />
+        <activity android:name=".view.CreateRoom"></activity>
+        <activity android:name=".view.Register" />
+        <activity android:name=".view.Waiting" />
+        <activity android:name=".view.Home" />
         <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,14 +20,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RoomOnline">
+        <activity android:name=".view.RoomOnline">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Menu">
+        <activity android:name=".view.Menu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

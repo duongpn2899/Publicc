@@ -1,4 +1,4 @@
-package com.example.activity1;
+package com.example.activity1.view;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +13,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.activity1.Login;
+import com.example.activity1.R;
+import com.example.activity1.model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -49,7 +52,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.exit:
-                startActivity(new Intent(this,Login.class));
+                startActivity(new Intent(this, Login.class));
                 break;
             case R.id.registerUser:
                 registerUser();
