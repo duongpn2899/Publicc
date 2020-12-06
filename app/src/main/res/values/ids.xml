@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="login" type="id">login</item>
-    <item name="email" type="id">email</item>
-    <item name="editTextTextPassword2" type="id">password</item>
-    <item name="register" type="id">register</item>
-</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "742290160880",
+    "firebase_url": "https://caro-b3550-default-rtdb.firebaseio.com",
+    "project_id": "caro-b3550",
+    "storage_bucket": "caro-b3550.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742290160880:android:e3605714c04d1f9fce9635",
+        "android_client_info": {
+          "package_name": "com.example.activity1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742290160880-7ggchcalh7715c4l2bilbom3ptoq82iq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoAd8YrhEdqfuOMbreR9O9XV5ASCa4Fcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742290160880-7ggchcalh7715c4l2bilbom3ptoq82iq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -4,87 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Register">
+    tools:context=".Login">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/banner"
-        android:text="Đăng ký"
-        android:textStyle="bold"
-        android:textSize="60sp"
+        android:id="@+id/login"
+        android:textSize="60dp"
+        android:text="Login"
         android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bannerDescrption"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/login"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="50dp"/>
-
+        />
     <EditText
         android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:id="@+id/full_name"
+        android:id="@+id/email_address"
         android:layout_marginTop="60dp"
         android:ems="10"
-        android:hint="Full Name"
-        android:inputType="text"
-        android:textSize="24sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/banner"
-        />
-    <EditText
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/age"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Age"
-        android:inputType="number"
-        android:textSize="24sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/full_name"
-        />
-    <EditText
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/email"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Email"
+        android:hint="Email Address"
         android:inputType="textEmailAddress"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/age"
+        app:layout_constraintTop_toBottomOf="@+id/bannerDescrption"
         />
     <EditText
         android:layout_width="400dp"
         android:layout_height="wrap_content"
-        android:id="@+id/password"
+        android:id="@+id/password_login"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/email_address"
         />
     <Button
         android:layout_width="380dp"
         android:layout_height="70dp"
-        android:id="@+id/registerUser"
+        android:id="@+id/signIn"
         android:textSize="26sp"
-        android:text="REGISTER USER"
+        android:text="Login"
         android:layout_marginTop="24dp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"/>
+        app:layout_constraintTop_toBottomOf="@+id/password_login"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgetPassword"
+        android:text="Forget Password"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/signIn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:text="Register"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/forgetPassword"
+        app:layout_constraintTop_toTopOf="@+id/forgetPassword"
+        />
+
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/simpleProgressBar2"
+        android:id="@+id/simpleProgressBar"
         style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:visibility="gone"
         tools:ignore="MissingConstraints"
@@ -93,13 +104,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
-
-    <Button
-        android:id="@+id/exit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Exit"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="6dp"
-        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
